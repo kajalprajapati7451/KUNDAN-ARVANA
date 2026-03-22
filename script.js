@@ -61,9 +61,9 @@ document.getElementById('gallerySlider').addEventListener('touchend', e => {
 
 // Floor plans
 const plans = [
-  { img: 'images/4bhk type 1.jpg', config: '4.5 BHK Type 1', carpet: '2244 Sq.Ft', saleable: '3141 Sq.Ft', price: '₹5.50 Cr*' },
-  { img: 'images/4bhk type 2.jpg', config: '4.5 BHK Type 2', carpet: '2269 Sq.Ft', saleable: '3177 Sq.Ft', price: '₹5.50 Cr*' },
-  { img: 'images/4bhk type 3.jpg', config: '4.5 BHK Type 3', carpet: '2244 Sq.Ft', saleable: '3141 Sq.Ft', price: '₹5.50 Cr*' },
+  { img: 'images/4bhk type 1.jpg', config: '4 BHK Type 1', carpet: '2244 Sq.Ft', saleable: '3141 Sq.Ft', price: '₹5.50 Cr*' },
+  { img: 'images/4bhk type 2.jpg', config: '4 BHK Type 2', carpet: '2269 Sq.Ft', saleable: '3177 Sq.Ft', price: '₹5.50 Cr*' },
+  { img: 'images/4bhk type 3.jpg', config: '4 BHK Type 3', carpet: '2244 Sq.Ft', saleable: '3141 Sq.Ft', price: '₹5.50 Cr*' },
   { img: 'images/4 bhk type.jpg',  config: '4 BHK',          carpet: '2141 Sq.Ft', saleable: '2998 Sq.Ft', price: '₹5.20 Cr*' },
 ];
 function switchPlan(idx, btn) {
