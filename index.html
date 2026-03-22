@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kundan Arvaana – Ultra-Luxury Residences, Balewadi Pune</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════ LAUNCHING SOON POPUP ══════════════ -->
+<div class="launch-popup-overlay" id="launchPopup">
+  <div class="launch-popup">
+    <button class="launch-popup-close" onclick="closePopup()" aria-label="Close">✕</button>
+    <div class="launch-popup-body">
+
+      <div class="launch-popup-badge">
+        <div class="launch-popup-badge-dot"></div>
+        <span>Upcoming Launch</span>
+      </div>
+
+      <h2 class="launch-popup-title">Kundan <strong>Arvaana</strong></h2>
+      <p class="launch-popup-subtitle">Balewadi · Pune · Ultra-Luxury Residences</p>
+      <div class="launch-popup-divider"></div>
+
+      <!-- Stats: 1 Acre / 33 Floors / 66 Units -->
+      <div class="launch-stats">
+        <div class="launch-stat">
+          <div class="launch-stat-num">1<span>Acre</span></div>
+          <div class="launch-stat-label">Land Parcel</div>
+        </div>
+        <div class="launch-stat">
+          <div class="launch-stat-num">33<span>Flrs</span></div>
+          <div class="launch-stat-label">Iconic Tower</div>
+        </div>
+        <div class="launch-stat">
+          <div class="launch-stat-num">66<span>Units</span></div>
+          <div class="launch-stat-label">Only 66 Homes</div>
+        </div>
+      </div>
+
+      <!-- Config rows -->
+      <div class="launch-configs">
+        <div class="launch-config-row">
+          <div class="launch-config-left">
+            <div class="launch-config-type">4 BHK</div>
+            <div class="launch-config-area">Carpet: 2141 Sq.Ft</div>
+          </div>
+          <div class="launch-config-price">₹5.20 Cr*</div>
+        </div>
+        <div class="launch-config-row">
+          <div class="launch-config-left">
+            <div class="launch-config-type">4.5 BHK</div>
+            <div class="launch-config-area">Carpet: 2244 Sq.Ft</div>
+          </div>
+          <div class="launch-config-price">₹5.50 Cr*</div>
+        </div>
+      </div>
+
+      <div class="launch-popup-btns">
+        <a href="#contact" class="btn-primary-gold" onclick="closePopup()">Register Interest</a>
+        <a href="#contact" class="btn-outline-gold" onclick="closePopup()">Know More</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav class="navbar-luxury" id="navbar">
+  <a href="#hero" style="text-decoration:none;">
+    <span class="navbar-brand-text">KUNDAN ARVAANA</span>
+    <span class="navbar-brand-sub">Balewadi · Pune</span>
+  </a>
+  <div class="desktop-nav d-none d-lg-flex align-items-center">
+    <a href="#about" class="nav-link-luxury">About</a>
+    <a href="#gallery" class="nav-link-luxury">Gallery</a>
+    <a href="#configurations" class="nav-link-luxury">Configurations</a>
+    <a href="#floorplans" class="nav-link-luxury">Floor Plans</a>
+    <a href="#location" class="nav-link-luxury">Location</a>
+    <a href="#contact" class="nav-cta ms-3">Enquire Now</a>
+  </div>
+  <button class="nav-toggle d-lg-none" id="navToggle" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeNav()">About</a>
+  <a href="#gallery" onclick="closeNav()">Gallery</a>
+  <a href="#configurations" onclick="closeNav()">Configurations</a>
+  <a href="#floorplans" onclick="closeNav()">Floor Plans</a>
+  <a href="#location" onclick="closeNav()">Location</a>
+  <a href="#contact" class="mobile-cta" onclick="closeNav()">Enquire Now →</a>
+</div>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero">
+  <div class="hero-bg-img" id="heroBg"></div>
+  <div class="hero-bg-vignette"></div>
+  <div class="hero-ornament"></div>
+  <div class="container" style="position:relative;z-index:2;padding-top:70px;">
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-lg-6">
+        <div class="fade-up"><span class="hero-tag">Now Launching · Balewadi, Pune</span></div>
+        <div class="fade-up fade-up-delay-1">
+          <h1 class="hero-title">Kundan<br><span class="gold-word">Arvaana</span></h1>
+          <p class="hero-subtitle">Ultra-Luxury 4 & 4.5 BHK Residences</p>
+        </div>
+        <div class="fade-up fade-up-delay-2">
+          <div class="hero-price-badge">
+            <div><div class="price-label">Starting From</div><div class="price-value">₹5.20 Cr*</div></div>
+            <div class="divider d-none d-sm-block"></div>
+            <div><div class="price-label">Configurations</div><div class="price-value">4 & 4.5 BHK</div></div>
+            <div class="divider d-none d-sm-block"></div>
+            <div><div class="price-label">Total Units</div><div class="price-value">Only 66</div></div>
+          </div>
+        </div>
+        <div class="d-flex gap-3 flex-wrap fade-up fade-up-delay-3">
+          <a href="#contact" class="btn-primary-gold">Get Cost Sheet</a>
+          <a href="#contact" class="btn-outline-gold">Schedule Site Visit</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-form-card fade-up fade-up-delay-2">
+          <h3>Request Exclusive Details</h3>
+          <p class="form-tagline">Private Brochure + Price Sheet</p>
+          <form onsubmit="submitHeroForm(event)">
+            <div class="mb-3"><input type="text" class="form-control form-control-luxury" placeholder="Your Full Name" required></div>
+            <div class="mb-3"><input type="tel" class="form-control form-control-luxury" placeholder="Mobile Number" required></div>
+            <div class="mb-4">
+              <select class="form-select form-select-luxury">
+                <option value="" disabled selected>I'm Interested In</option>
+                <option>4 BHK – 2141 Sq.Ft | ₹5.20 Cr</option>
+                <option>4.5 BHK – 2244 Sq.Ft | ₹5.50 Cr</option>
+                <option>Both Configurations</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-primary-gold w-100" style="text-align:center;">Get Exclusive Brochure</button>
+            <p class="privacy-line mt-3">🔒 Your details are 100% confidential. <a href="#">Privacy Policy</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STATS ══════════════ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-6 col-md-3 stat-item fade-up"><div class="stat-number">1<span>Acre</span></div><div class="stat-label">Exclusive Land Parcel</div></div>
+      <div class="col-6 col-md-3 stat-item fade-up fade-up-delay-1"><div class="stat-number">33<span>Floors</span></div><div class="stat-label">Iconic Tower</div></div>
+      <div class="col-6 col-md-3 stat-item fade-up fade-up-delay-2"><div class="stat-number">66<span>Units</span></div><div class="stat-label">Ultra-Exclusive Homes</div></div>
+      <div class="col-6 col-md-3 stat-item fade-up fade-up-delay-3"><div class="stat-number">45<span>Yrs</span></div><div class="stat-label">Engineering Excellence</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-lg-6 fade-up">
+        <div class="about-image-block">
+          <img src="images/gallery 5.jpg" alt="A Home Crafted for the Few">
+          <div class="img-label">A rare architectural gem designed for the UHNI who value space, privacy, precision, and timeless elegance.</div>
+        </div>
+      </div>
+      <div class="col-lg-6 fade-up fade-up-delay-1">
+        <p class="section-eyebrow">About The Project</p>
+        <h2 class="section-title">A Home Crafted for the <span class="accent">Few</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-body-text mb-4">In one of Pune's strongest and most rapidly rising pin codes — Balewadi — we present a landmark that stands in a league of its own. Kundan Arvaana is a rare architectural gem designed for the UHNI who value space, privacy, precision, and timeless elegance.</p>
+        <p class="section-body-text mb-4">Rising 33 floors on an exclusive 1-acre parcel, with just 66 ultra-exclusive residences, Arvaana redefines what luxury means in Pune's skyline.</p>
+        <div class="about-feature">
+          <div class="about-feature-icon"><i class="fas fa-layer-group"></i></div>
+          <div><div class="about-feature-title">Double-Height Family Room</div><div class="about-feature-text">Glass on three sides — a feature rarely seen in Pune. Floor-to-ceiling views of the city skyline.</div></div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon"><i class="fas fa-shield-halved"></i></div>
+          <div><div class="about-feature-title">Only 2 Units Per Floor</div><div class="about-feature-text">Unmatched privacy and exclusivity. Your address defines your status.</div></div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon"><i class="fas fa-building"></i></div>
+          <div><div class="about-feature-title">45 Years of Engineering Excellence</div><div class="about-feature-text">Kundan Spaces — a legacy of precision, quality, and trusted craftsmanship in Pune.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ LIFESTYLE ══════════════ -->
+<section id="lifestyle">
+  <div class="container-fluid px-0">
+    <div class="container mb-4">
+      <p class="section-eyebrow fade-up">The Lifestyle</p>
+      <h2 class="section-title fade-up fade-up-delay-1">The <span class="accent">Height</span> of Urban<br>Sophistication</h2>
+    </div>
+    <div class="lifestyle-grid">
+      <div class="lifestyle-item fade-up">
+        <img src="images/gallery 1.jpg" alt="Urban Sophistication">
+        <div class="lifestyle-overlay">
+          <div class="lifestyle-overlay-title">Height of Urban Sophistication</div>
+          <div class="lifestyle-overlay-text">Panoramic city views from every residence</div>
+        </div>
+      </div>
+      <div class="lifestyle-item fade-up fade-up-delay-1">
+        <img src="images/gallery 2.jpg" alt="Glass-Wrapped Living">
+        <div class="lifestyle-overlay">
+          <div class="lifestyle-overlay-title">Glass-Wrapped Living</div>
+          <div class="lifestyle-overlay-text">Double-height family room with 270° views</div>
+        </div>
+      </div>
+      <div class="lifestyle-item fade-up fade-up-delay-2">
+        <img src="images/gallery 3.jpg" alt="Lifestyle Elevated">
+        <div class="lifestyle-overlay">
+          <div class="lifestyle-overlay-title">Lifestyle Above the Skyline</div>
+          <div class="lifestyle-overlay-text">Rooftop infinity experience, Balewadi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ GALLERY ══════════════ -->
+<section id="gallery">
+  <div class="container mb-4">
+    <p class="section-eyebrow fade-up">Visual Journey</p>
+    <h2 class="section-title fade-up fade-up-delay-1">The <span class="accent">Gallery</span></h2>
+    <div class="section-divider fade-up fade-up-delay-2"></div>
+  </div>
+  <div class="container-fluid px-3 px-lg-5 fade-up">
+    <div class="gallery-slider-wrap">
+      <div class="gallery-slider" id="gallerySlider">
+        <div class="gallery-slide"><img src="images/gallery 1.jpg" alt="Gallery 1"><div class="gallery-slide-num">01</div><div class="gallery-slide-overlay"><div class="gallery-slide-title">Where Every View is a Masterpiece</div><div class="gallery-slide-desc">33 floors of uninterrupted Pune skyline</div></div></div>
+        <div class="gallery-slide"><img src="images/gallery 2.jpg" alt="Gallery 2"><div class="gallery-slide-num">02</div><div class="gallery-slide-overlay"><div class="gallery-slide-title">A Rare Residence for the Discerning Few</div><div class="gallery-slide-desc">Spacious, understated, timeless luxury</div></div></div>
+        <div class="gallery-slide"><img src="images/gallery 3.jpg" alt="Gallery 3"><div class="gallery-slide-num">03</div><div class="gallery-slide-overlay"><div class="gallery-slide-title">Glass-Wrapped Living Spaces</div><div class="gallery-slide-desc">Double-height family room · Glass on three sides</div></div></div>
+        <div class="gallery-slide"><img src="images/gallery 4.jpg" alt="Gallery 4"><div class="gallery-slide-num">04</div><div class="gallery-slide-overlay"><div class="gallery-slide-title">Lifestyle Elevated Above the Skyline</div><div class="gallery-slide-desc">Rooftop infinity pool & sky lounge</div></div></div>
+        <div class="gallery-slide"><img src="images/gallery 5.jpg" alt="Gallery 5"><div class="gallery-slide-num">05</div><div class="gallery-slide-overlay"><div class="gallery-slide-title">State-of-the-Art Fitness Zone</div><div class="gallery-slide-desc">A dedicated level for curated lifestyle spaces</div></div></div>
+        <div class="gallery-slide"><img src="images/gallery 6.jpg" alt="Gallery 6"><div class="gallery-slide-num">06</div><div class="gallery-slide-overlay"><div class="gallery-slide-title">Grand Lobby · Understated Luxury</div><div class="gallery-slide-desc">A refined arrival experience every single day</div></div></div>
+        <div class="gallery-slide"><img src="images/gallery 7.jpg" alt="Gallery 7"><div class="gallery-slide-num">07</div><div class="gallery-slide-overlay"><div class="gallery-slide-title">Premium Parking for Prized Possessions</div><div class="gallery-slide-desc">Ample, easy-access ground-level parking</div></div></div>
+      </div>
+      <div class="gallery-controls">
+        <button class="gallery-btn" onclick="galleryPrev()"><i class="fas fa-chevron-left"></i></button>
+        <button class="gallery-btn" onclick="galleryNext()"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="gallery-thumbs" id="galleryThumbs">
+      <div class="gallery-thumb active" onclick="galleryGoTo(0)"><img src="images/gallery 1.jpg" alt=""></div>
+      <div class="gallery-thumb" onclick="galleryGoTo(1)"><img src="images/gallery 2.jpg" alt=""></div>
+      <div class="gallery-thumb" onclick="galleryGoTo(2)"><img src="images/gallery 3.jpg" alt=""></div>
+      <div class="gallery-thumb" onclick="galleryGoTo(3)"><img src="images/gallery 4.jpg" alt=""></div>
+      <div class="gallery-thumb" onclick="galleryGoTo(4)"><img src="images/gallery 5.jpg" alt=""></div>
+      <div class="gallery-thumb" onclick="galleryGoTo(5)"><img src="images/gallery 6.jpg" alt=""></div>
+      <div class="gallery-thumb" onclick="galleryGoTo(6)"><img src="images/gallery 7.jpg" alt=""></div>
+    </div>
+    <div class="gallery-progress-bar">
+      <div class="gallery-progress-fill" id="galleryProgress" style="width:14.28%"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONFIGURATIONS ══════════════ -->
+<section id="configurations">
+  <div class="container">
+    <div class="row mb-4 mb-lg-5">
+      <div class="col-12 text-center fade-up">
+        <p class="section-eyebrow">Configurations & Pricing</p>
+        <h2 class="section-title">Choose Your <span class="accent">Residence</span></h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="config-card">
+          <div class="config-type">Exclusive Configuration</div>
+          <div class="config-bhk">4 BHK</div>
+          <div class="config-carpet">Carpet: 2141 Sq.Ft &nbsp;|&nbsp; Saleable: 2998 Sq.Ft</div>
+          <div class="config-price">₹5.20 Cr<span style="font-size:14px;color:rgba(255,255,255,0.45)">*</span></div>
+          <div class="config-price-label">All Inclusive Price</div>
+          <div class="config-divider"></div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> Double-Height Terrace</div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> Formal Living & Dining: 24'×16'</div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> Master Bedroom: 12'×17'</div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> Kitchen: 12'×14' with Dry Balcony</div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> Servant's Room + WIW Wardrobes</div>
+          <div class="mt-4"><a href="#contact" class="btn-outline-gold d-block text-center">Get Floor Plan</a></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up fade-up-delay-1">
+        <div class="config-card" style="border-color:rgba(201,168,76,0.45);">
+          <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--maroon),var(--gold),var(--maroon));border-radius:8px 8px 0 0;"></div>
+          <div class="config-type">Signature Configuration</div>
+          <div class="config-bhk">4.5 BHK</div>
+          <div class="config-carpet">Carpet: 2244 Sq.Ft &nbsp;|&nbsp; Saleable: 3141 Sq.Ft</div>
+          <div class="config-price">₹5.50 Cr<span style="font-size:14px;color:rgba(255,255,255,0.45)">*</span></div>
+          <div class="config-price-label">All Inclusive Price</div>
+          <div class="config-divider"></div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> Double-Height Family Room: 11'8"×13'6"</div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> Sitout: 9'9"×11'6"</div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> 2 Master Bedrooms with WIW</div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> Formal Living & Dining: 24'×16'</div>
+          <div class="config-feature"><i class="fas fa-circle-dot"></i> 3 Variants: Type 1, 2 & 3</div>
+          <div class="mt-4"><a href="#contact" class="btn-primary-gold d-block text-center">Get Floor Plan</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FLOOR PLANS ══════════════ -->
+<section id="floorplans">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 fade-up">
+        <p class="section-eyebrow">Unit Plans</p>
+        <h2 class="section-title">Floor <span class="accent">Plans</span></h2>
+        <div class="section-divider"></div>
+      </div>
+    </div>
+    <div class="row mb-3 fade-up">
+      <div class="col-12">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.15);padding:8px 16px;border-radius:8px;">
+          <img src="images/title floor plan.jpg" alt="Floor Plans" style="width:100%;max-height:70px;object-fit:contain;filter:brightness(1.1);">
+        </div>
+      </div>
+    </div>
+    <div class="plan-tabs fade-up">
+      <button class="plan-tab active" onclick="switchPlan(0, this)">4 BHK Type 1</button>
+      <button class="plan-tab" onclick="switchPlan(1, this)">4 BHK Type 2</button>
+      <button class="plan-tab" onclick="switchPlan(2, this)">4 BHK Type 3</button>
+      <button class="plan-tab" onclick="switchPlan(3, this)">4 BHK</button>
+    </div>
+    <div class="row g-4 g-lg-5 align-items-center">
+      <div class="col-lg-8 fade-up">
+        <div class="plan-image-wrap"><img src="images/4bhk type 1.jpg" alt="Floor Plan" id="planImage"></div>
+      </div>
+      <div class="col-lg-4 fade-up fade-up-delay-1">
+        <div class="plan-info">
+          <div class="plan-info-item"><div class="plan-info-label">Configuration</div><div class="plan-info-value" id="piConfig">4.5 BHK Type 1</div></div>
+          <div class="plan-info-item"><div class="plan-info-label">Carpet Area</div><div class="plan-info-value" id="piCarpet">2244 Sq.Ft</div></div>
+          <div class="plan-info-item"><div class="plan-info-label">Saleable Area</div><div class="plan-info-value" id="piSaleable">3141 Sq.Ft</div></div>
+          <div class="plan-info-item"><div class="plan-info-label">Price</div><div class="plan-info-value gold" id="piPrice">₹5.50 Cr*</div></div>
+        </div>
+        <a href="#contact" class="btn-primary-gold d-block text-center mt-4">Get Full Floor Plan</a>
+        <p class="privacy-line mt-3">*For Internal Circulation Only</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ LOCATION ══════════════ -->
+<section id="location">
+  <div class="container">
+    <div class="row mb-4 mb-lg-5">
+      <div class="col-12 text-center fade-up">
+        <p class="section-eyebrow">Location Advantage</p>
+        <h2 class="section-title">Connected to <span class="accent">Everything</span></h2>
+        <div class="section-divider mx-auto"></div>
+        <p class="section-body-text mx-auto" style="max-width:500px;">Balewadi is Pune's fastest-rising address — at the heart of IT corridors, premium retail, and seamless Metro connectivity.</p>
+      </div>
+    </div>
+    <div class="row g-4 g-lg-5 align-items-start">
+      <div class="col-lg-7 fade-up">
+        <div class="location-image-wrap mb-3">
+          <img src="images/location.jpg" alt="Balewadi">
+          <div class="location-image-label">Balewadi — one of Pune's strongest pin codes and home to the city's rare UHNI community.</div>
+        </div>
+        <div class="location-map-wrap">
+          <img src="images/footer image.jpg" alt="Location Map">
+        </div>
+      </div>
+      <div class="col-lg-5 fade-up fade-up-delay-1">
+        <p class="section-eyebrow mb-3">Key Distances</p>
+        <div class="connectivity-item"><div class="connectivity-dot"></div><div class="connectivity-name">Balewadi Stadium Metro</div><div><div class="connectivity-time">5 Min</div></div></div>
+        <div class="connectivity-item"><div class="connectivity-dot"></div><div class="connectivity-name">Nicmar Metro Station</div><div><div class="connectivity-time">5 Min</div></div></div>
+        <div class="connectivity-item"><div class="connectivity-dot"></div><div class="connectivity-name">Ram Nagar Metro Station</div><div><div class="connectivity-time">5 Min</div></div></div>
+        <div class="connectivity-item"><div class="connectivity-dot"></div><div class="connectivity-name">Balewadi Highstreet Mall</div><div><div class="connectivity-time">6 Min</div></div></div>
+        <div class="connectivity-item"><div class="connectivity-dot"></div><div class="connectivity-name">Highstreet Metro Station</div><div><div class="connectivity-time">7 Min</div></div></div>
+        <div class="connectivity-item"><div class="connectivity-dot"></div><div class="connectivity-name">Balewadi Stadium</div><div><div class="connectivity-time">8 Min</div></div></div>
+        <div class="connectivity-item"><div class="connectivity-dot"></div><div class="connectivity-name">Jupiter Hospital</div><div><div class="connectivity-time">9 Min</div></div></div>
+        <div class="connectivity-item"><div class="connectivity-dot"></div><div class="connectivity-name">Orchid Hotel</div><div><div class="connectivity-time">10 Min</div></div></div>
+        <div class="mt-4 p-4" style="background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.2);border-radius:8px;">
+          <p class="section-eyebrow" style="margin-bottom:6px;">Address</p>
+          <p class="section-body-text" style="font-size:13px;">Golden Street, Balewadi, Pune – 411045</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-outline-gold d-inline-block mt-3" style="font-size:10px;padding:10px 22px;">
+            <i class="fas fa-map-marker-alt me-2"></i>View on Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ DEVELOPER ══════════════ -->
+<section id="developer">
+  <div class="container">
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-lg-5 fade-up">
+        <p class="section-eyebrow">The Developer</p>
+        <h2 class="section-title">A Legacy of <span class="accent">Excellence</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-body-text mb-4">For 45 years, Kundan Spaces has set the benchmark for engineering precision and quality construction in Pune. Every project bears the hallmark of meticulous craftsmanship, delivering homes that stand the test of time.</p>
+        <div class="rera-badge">
+          <i class="fas fa-certificate"></i>
+          <div class="rera-text"><strong>RERA Registered Project</strong>MahaRERA No. Available on Request</div>
+        </div>
+      </div>
+      <div class="col-lg-7 fade-up fade-up-delay-1">
+        <div class="dev-logo-area">
+          <div><div class="dev-logo-text">KUNDAN<span>SPACES</span></div><div class="dev-badge mt-3">45 Years of Engineering Excellence</div></div>
+          <div style="flex:1;text-align:right;"><img src="images/image.jpg" alt="Kundan Spaces" style="max-height:110px;max-width:180px;object-fit:contain;filter:brightness(0.9);"></div>
+        </div>
+        <div class="row g-3 mt-2">
+          <div class="col-4"><div style="background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.15);padding:18px;text-align:center;border-radius:8px;"><div style="font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold);font-weight:600;">45+</div><div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-top:4px;">Years</div></div></div>
+          <div class="col-4"><div style="background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.15);padding:18px;text-align:center;border-radius:8px;"><div style="font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold);font-weight:600;">20+</div><div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-top:4px;">Projects</div></div></div>
+          <div class="col-4"><div style="background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.15);padding:18px;text-align:center;border-radius:8px;"><div style="font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold);font-weight:600;">5K+</div><div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-top:4px;">Families</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="row mb-4 mb-lg-5">
+      <div class="col-12 text-center fade-up">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">Schedule Your <span class="accent">Private Viewing</span></h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+    </div>
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-7 fade-up">
+        <div class="contact-card">
+          <form onsubmit="submitContactForm(event)">
+            <div class="row g-3 g-md-4">
+              <div class="col-md-6"><label class="form-label-luxury">Full Name *</label><input type="text" class="form-control form-control-luxury" placeholder="Your Name" required></div>
+              <div class="col-md-6"><label class="form-label-luxury">Mobile Number *</label><input type="tel" class="form-control form-control-luxury" placeholder="+91 XXXXX XXXXX" required></div>
+              <div class="col-md-6"><label class="form-label-luxury">Email Address</label><input type="email" class="form-control form-control-luxury" placeholder="your@email.com"></div>
+              <div class="col-md-6">
+                <label class="form-label-luxury">Configuration</label>
+                <select class="form-select form-select-luxury"><option value="" disabled selected>Select Configuration</option><option>4 BHK – ₹5.20 Cr</option><option>4.5 BHK – ₹5.50 Cr</option><option>Both</option></select>
+              </div>
+              <div class="col-12">
+                <label class="form-label-luxury">Purpose of Enquiry</label>
+                <select class="form-select form-select-luxury"><option value="" disabled selected>Select Purpose</option><option>Self Use</option><option>Investment</option><option>Schedule Site Visit</option><option>Get Cost Sheet</option><option>Get Floor Plans</option></select>
+              </div>
+              <div class="col-12"><label class="form-label-luxury">Message (Optional)</label><textarea class="form-control form-control-luxury" rows="3" placeholder="Any specific queries..."></textarea></div>
+              <div class="col-12">
+                <label class="form-label-luxury">Verification</label>
+                <div class="captcha-box">
+                  <div class="captcha-left">
+                    <div class="captcha-check" id="captchaCheck" onclick="toggleCaptcha()"><i class="fas fa-check" id="captchaIcon" style="display:none;"></i></div>
+                    <span class="captcha-text">I am not a robot</span>
+                  </div>
+                  <div class="captcha-right"><div style="font-size:16px;color:var(--gold);">🔒</div><div>CAPTCHA</div></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-gold w-100" style="padding:15px;font-size:11px;letter-spacing:3px;">Book Private Site Visit</button>
+                <p class="privacy-line mt-3">By submitting you agree to our <a href="#">Privacy Policy</a> & <a href="#">Terms</a>. Your data is secure.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-5 fade-up fade-up-delay-1">
+        <div class="mb-4">
+          <p class="section-eyebrow mb-3">Contact Information</p>
+          <div class="contact-detail"><div class="contact-detail-icon"><i class="fas fa-location-dot"></i></div><div><div class="contact-detail-label">Project Address</div><div class="contact-detail-value">Golden Street, Balewadi<br>Pune – 411045, Maharashtra</div></div></div>
+          <div class="contact-detail"><div class="contact-detail-icon"><i class="fas fa-phone"></i></div><div><div class="contact-detail-label">Sales Enquiry</div><div class="contact-detail-value">+91 98765 43210</div></div></div>
+          <div class="contact-detail"><div class="contact-detail-icon"><i class="fab fa-whatsapp"></i></div><div><div class="contact-detail-label">WhatsApp</div><div class="contact-detail-value">+91 98765 43210</div></div></div>
+          <div class="contact-detail"><div class="contact-detail-icon"><i class="fas fa-envelope"></i></div><div><div class="contact-detail-label">Email</div><div class="contact-detail-value">sales@kundanarvaana.com</div></div></div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.2);padding:24px;border-radius:8px;">
+          <p class="section-eyebrow mb-3">Site Visit Timings</p>
+          <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(201,168,76,0.1);"><span style="font-size:13px;color:rgba(255,255,255,0.55);">Monday – Saturday</span><span style="font-size:13px;color:var(--white);font-weight:600;">10 AM – 7 PM</span></div>
+          <div style="display:flex;justify-content:space-between;padding:10px 0;"><span style="font-size:13px;color:rgba(255,255,255,0.55);">Sunday</span><span style="font-size:13px;color:var(--white);font-weight:600;">11 AM – 5 PM</span></div>
+          <div style="margin-top:16px;padding:12px 14px;background:rgba(201,168,76,0.07);border-left:3px solid var(--gold);border-radius:0 4px 4px 0;"><p style="font-size:12px;color:rgba(255,255,255,0.65);margin:0;">By appointment only. Exclusive private viewings for qualified buyers.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-top-banner">
+    <img src="images/footer image.jpg" alt="Kundan Spaces">
+    <div class="footer-top-banner-overlay">
+      <div class="footer-logo-banner"><img src="images/footer image.jpg" alt="Kundan Spaces Logo"></div>
+    </div>
+  </div>
+  <div class="footer-bottom-bar">
+    <div class="container">
+      <div class="footer-bottom">© 2025 Kundan Spaces. All Rights Reserved. &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms & Conditions</a></div>
+      <div class="footer-disclaimer">Disclaimer: All details, prices, plans, and information mentioned on this page are indicative and subject to change without prior notice. Images used are for representation purposes only. This is not a legal offering document. Please verify all details independently. *Prices are all-inclusive and subject to applicable taxes. RERA Registration details available on request.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════ STICKY MOBILE BAR ══════════════ -->
+<div class="sticky-mobile-bar">
+  <div class="sticky-bar-inner">
+    <a href="tel:+919876543210" class="sticky-btn sticky-btn-call">
+      <div class="btn-icon-wrap"><i class="fas fa-phone"></i></div>
+      <span class="btn-label">Call Now</span>
+    </a>
+    <a href="https://wa.me/919876543210" class="sticky-btn sticky-btn-whatsapp">
+      <div class="btn-icon-wrap"><i class="fab fa-whatsapp"></i></div>
+      <span class="btn-label">WhatsApp</span>
+    </a>
+    <a href="#contact" class="sticky-btn sticky-btn-enquire">
+      <div class="btn-icon-wrap"><i class="fas fa-paper-plane"></i></div>
+      <span class="btn-label">Enquire Now</span>
+    </a>
+  </div>
+</div>
+
+<a href="#hero" class="scroll-top-btn" id="scrollTopBtn" title="Back to top"><i class="fas fa-chevron-up"></i></a>
+
+<!-- ══════════════ SCRIPTS ══════════════ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
